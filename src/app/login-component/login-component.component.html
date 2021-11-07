@@ -1,0 +1,20 @@
+<div class="loginAndSignup">
+    <div class="tab">
+        <button class="tab-button" (click)="login()">Login</button>
+        <div class="verticalLine"></div>
+        <button class="tab-button signup" (click)="signup()">Signup</button><br>
+      </div> 
+    <form class="loginForm" *ngIf="showLoginForm">    
+      <input type="text" placeholder="Username" class="usernameInput" required><br>
+      <input type="password" placeholder="Password" class="passwordInput" required><br>
+      <input type="button" value="Submit" class="loginSubmit"  (click)="showTime()">
+    </form>
+    <form class="signupForm" *ngIf="showSignupForm">    
+        <input type="text" placeholder="Firstname" class="name" required>
+        <input type="text" placeholder="Lastname" class="name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <input type="password" placeholder="Confirm Password" required><br>
+        <input type="button" value="Submit" class="loginSubmit" >
+      </form>
+  </div>
