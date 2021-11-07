@@ -3,12 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponentComponent } from './login-component/login-component.component';
+import { LoginComponent } from './loginComponent/login-component.component';
+import { ProfileComponent } from './profileComponent/profile-component.component';
+import { HeaderComponent } from './header/header.component';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponentComponent
+    LoginComponent,
+    ProfileComponent,
+    HeaderComponent,
+    ImageUploadComponent
   ],
   imports: [
     BrowserModule,
