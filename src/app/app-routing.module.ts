@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from './loginComponent/login-component.component';
 import {ProfileComponent} from './profileComponent/profile-component.component';
 import { ImageUploadComponent } from './image-upload/image-upload.component';
-
+import {MostDownloadedComponent} from './most-downloaded/most-downloaded.component'
 
 const routes: Routes = [
   {
@@ -17,6 +17,9 @@ const routes: Routes = [
   },
   {
     path:'imageUpload', component: ImageUploadComponent
+  },
+  {
+    path:'mostDownload', component: MostDownloadedComponent
   }
 ];
 
