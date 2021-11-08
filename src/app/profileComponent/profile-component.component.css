@@ -1,2 +1,6 @@
 /* .profileHeader{
 } */
+.tile-image {
+    max-width:100%;
+    height: auto;
+  }

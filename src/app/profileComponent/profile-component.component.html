@@ -1,8 +1,8 @@
 <app-header></app-header>
-<p>profile</p>
-<mat-grid-list cols="3" >
-    <mat-grid-tile style="background:cyan;">1</mat-grid-tile>
-    <mat-grid-tile style="background:cyan;">2</mat-grid-tile>
-    <mat-grid-tile style="background:cyan;">3</mat-grid-tile>
-    <mat-grid-tile style="background:cyan;">4</mat-grid-tile>
+<h2>Your Images</h2>
+<mat-grid-list cols="4" >
+    <mat-grid-tile *ngFor="let img of images;index as i">
+      <img class="tile-image" [src]="img.image" >
+      <mat-grid-tile-footer>image {{i+1}}</mat-grid-tile-footer>
+    </mat-grid-tile>
   </mat-grid-list>
